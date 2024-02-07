@@ -1,8 +1,8 @@
-# The Job
+# Weprint247-website
 
-> Ref of old website https://www.weprint247.co.uk/
+Weprint247-website is a app developed in javascript using `React`, `HTML` and `CSS`.
 
-- [] in contexts: combine the item coming from api with the style needed for each item (make up this 4 items: t-shirts, hoodies, business cards and flyers)
+The app allows you to see the weather from your current location or another location around the globe using **weatherapi**. \
 
   ### **Goals**
 
