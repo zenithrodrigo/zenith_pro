@@ -2,112 +2,39 @@
 
 Weprint247-website is a app developed in javascript using `React`, `HTML` and `CSS`.
 
-The app allows you to see the weather from your current location or another location around the globe using **weatherapi**. \
+The app allows you to see the products from the shop, design your own the selected product and be served designed product.
+Every product contain four sides including front, back, left and right side. So you can design on four sides.
+The designed products are reserved order through checkout process and designed images are sent to business owner.
 
-  ### **Goals**
+** Library
 
-  - to have consistency for the whole app from featured items in home, to shop and create your own pages
+- react-js
+- tailwind-css
 
-  -
+** Setup
 
-  > **notes:**
-  >
-  > - check [api-usage](#api-usage)
-  > - check /src/pages/DesignOverlay.jsx for style usage
+- Make sure you already have `Node.js` and `npm` installed in your system.
+- Replace a file called **.env_sample** into **.env**.
+  
 
-- [] style [layout](#layout) and [pages](#pages)
-
-# API usage
+** API usage
 
 > Check /src/context/UserContext.jsx
 
 > Now item is hardcoded in /src/pages/CreateYourOwn.jsx
 
-you are gonna work with an item that looks like this
 
-```javascript
-const item = {
-  approvedForMarketplace: false,
-  business: "655dc6a4899de08a03c26035",
-  category: "t-shirts",
-  description: "T-shirt",
-  img: hoodieImage,
-  name: "T-shirt",
-  price: 500,
-  quantity: 100,
-  _id: "655de6ccff5cf1835b8653cb",
-  images: {
-    front: tShirtImageFront,
-    back: tShirtImageBack,
-    right: tShirtImageRight,
-    left: tShirtImageLeft,
-  },
-  styles: {
-    front: {
-      top: "12%",
-      left: "23%",
-      width: "53%",
-      height: "70%",
-    },
-    back: { top: "12%", left: "23%", width: "53%", height: "70%" },
-    right: { top: "33%", left: "25%", width: "45%", height: "47%" },
-    left: { top: "33%", left: "25%", width: "45%", height: "47%" },
-  },
-};
-```
-
-it's a sum between the inventoryItem from api (hard code this one for now and copy and paste in a array to have inventoryItems)
-
-```javascript
-const inventoryItem = {
-  approvedForMarketplace: false,
-  business: "655dc6a4899de08a03c26035",
-  category: "t-shirts",
-  description: "T-shirt",
-  img: hoodieImage,
-  name: "T-shirt",
-  price: 500,
-  quantity: 100,
-  _id: "655de6ccff5cf1835b8653cb",
-};
-```
-
-and some code for styling and design background (this will be integrated into the app with a website builder in the future)
-
-right now they have to change for each item proposed like t-shirts, hoodies, mugs, hats and so on
-
-```javascript
-const item = {
-  ...inventoryItem
-  images: {
-    front: tShirtImageFront,
-    back: tShirtImageBack,
-    right: tShirtImageRight,
-    left: tShirtImageLeft,
-  },
-  styles: {
-    front: {
-      top: "12%",
-      left: "23%",
-      width: "53%",
-      height: "70%",
-    },
-    back: { top: "12%", left: "23%", width: "53%", height: "70%" },
-    right: { top: "33%", left: "25%", width: "45%", height: "47%" },
-    left: { top: "33%", left: "25%", width: "45%", height: "47%" },
-  },
-};
-```
+** Project Configuration
 
 # Layout
 
-- [] header
+*** header
 
   - [] menu drawer
 
   - [] cart icon
 
-- [] footer
+*** footer
 
   - [] social links (use this icons https://react-icons.github.io/react-icons/)
 
@@ -117,40 +44,9 @@ const item = {
 
 # Pages
 
-- [>] CreateYourOwn.jsx
+*** CreateYourOwn.jsx
 
   - [>] create itemsContext where an item is
-
-    ```javascript
-    const item = {
-      approvedForMarketplace: false,
-      business: "655dc6a4899de08a03c26035",
-      category: "t-shirts",
-      description: "T-shirt",
-      img: hoodieImage,
-      images: {
-        front: tShirtImageFront,
-        back: tShirtImageBack,
-        right: tShirtImageRight,
-        left: tShirtImageLeft,
-      },
-      name: "T-shirt",
-      price: 500,
-      quantity: 100,
-      _id: "655de6ccff5cf1835b8653cb",
-      styles: {
-        front: {
-          top: "12%",
-          left: "23%",
-          width: "53%",
-          height: "70%",
-        },
-        back: { top: "12%", left: "23%", width: "53%", height: "70%" },
-        right: { top: "33%", left: "25%", width: "45%", height: "47%" },
-        left: { top: "33%", left: "25%", width: "45%", height: "47%" },
-      },
-    };
-    ```
 
     and it comes from api.js
 
@@ -172,7 +68,7 @@ const item = {
 
 - [] auth
 
-- [>] checkout
+*** checkout
 
   - [] ask email or sign in/up
 
@@ -182,28 +78,21 @@ const item = {
 
   - [] review order and confirm
 
-- [] style home
+*** style home
 
-- [] style shop
+*** style shop
 
-- [] about us
+*** about us
 
-- [] contact us
+*** contact us
 
   - [] email + message
 
-- [] order
+*** order
 
   - [] show customer's order
 
-- [] cart
-
-- [] Credits.jsx page
-
-  - [] example: <a href="https://www.freepik.com/free-vector/short-sleeves-white-t-shirt-mockup_29663920.htm#query=transparent%20background%20t%20shirt&position=48&from_view=search&track=ais&uuid=8d6754b0-9a6d-4202-82b3-1721f78d1fb5">
-    Image by vector_corp
-    </a>
-    on Freepik
+*** cart
 
 # Notes
 
