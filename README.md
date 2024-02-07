@@ -6,35 +6,35 @@ The app allows you to see the products from the shop, design your own the select
 Every product contain four sides including front, back, left and right side. So you can design on four sides.
 The designed products are reserved order through checkout process and designed images are sent to business owner.
 
-** Library
+## Library
 
 - react-js
 - tailwind-css
 
-** Setup
+## Setup
 
 - Make sure you already have `Node.js` and `npm` installed in your system.
 - Replace a file called **.env_sample** into **.env**.
   
 
-** API usage
+## API usage
 
 > Check /src/context/UserContext.jsx
 
 > Now item is hardcoded in /src/pages/CreateYourOwn.jsx
 
 
-** Project Configuration
+## Project Configuration
 
-# Layout
+### Layout
 
-*** header
+- header
 
   - [] menu drawer
 
   - [] cart icon
 
-*** footer
+- footer
 
   - [] social links (use this icons https://react-icons.github.io/react-icons/)
 
@@ -42,9 +42,9 @@ The designed products are reserved order through checkout process and designed i
 
   - [] poweredBy (Werewolf Solutions icon)
 
-# Pages
+### Pages
 
-*** CreateYourOwn.jsx
+- CreateYourOwn.jsx
 
   - [>] create itemsContext where an item is
 
@@ -68,7 +68,7 @@ The designed products are reserved order through checkout process and designed i
 
 - [] auth
 
-*** checkout
+- checkout
 
   - [] ask email or sign in/up
 
@@ -78,21 +78,21 @@ The designed products are reserved order through checkout process and designed i
 
   - [] review order and confirm
 
-*** style home
+- style home
 
-*** style shop
+- style shop
 
-*** about us
+- about us
 
-*** contact us
+- contact us
 
   - [] email + message
 
-*** order
+- order
 
   - [] show customer's order
 
-*** cart
+- cart
 
 # Notes
 
