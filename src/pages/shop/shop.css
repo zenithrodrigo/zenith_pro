@@ -1,0 +1,128 @@
+.shop {
+  padding: 20px;
+}
+
+.title-section {
+  position: relative;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden; /* Ensure the border-radius is applied correctly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  height: 25vh;
+}
+
+.title-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/design-mugs.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Add blur effect only to the background image */
+  z-index: -1; /* Move the pseudo-element to the back */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-filter button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-filter button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.category-filter button.selected {
+  background-color: orange; 
+  color: #fff;
+}
+
+.items-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  text-align: center;
+  max-width: 300px;
+  position: relative;
+}
+
+.design-button {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 18%; */
+  background-color: #007bff;
+  opacity: 80%;
+  color: #fff;
+  padding: 6px 16px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* font-size: 16px; */
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.design-button:hover {
+  background-color: orange;
+  transform: scale(1.1);
+  font-weight: 800;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width:640px) {
+  .design-button {
+    position: static;
+    /* font-size: 14px; */
+    /* top: 25%;*/
+    left: 25%; 
+  }
+}
+
+@media screen and (max-width:425px) {
+  .design-button {
+    font-size: 12px;
+  }
+}
