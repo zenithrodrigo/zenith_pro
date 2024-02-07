@@ -65,6 +65,8 @@ The designed products are reserved order through checkout process and designed i
     
 - checkout
 
+  add styling.
+
   used stripe module.
 
   - [] ask email or sign in/up
