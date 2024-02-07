@@ -21,7 +21,6 @@ The designed products are reserved order through checkout process and designed i
 
 > Check /src/context/UserContext.jsx
 
-> Now item is hardcoded in /src/pages/CreateYourOwn.jsx
 
 
 ## Project Configuration
@@ -32,7 +31,7 @@ The designed products are reserved order through checkout process and designed i
 
   - [] menu drawer
 
-  - [] cart icon
+  - [] add cart icon
 
 - footer
 
@@ -46,29 +45,27 @@ The designed products are reserved order through checkout process and designed i
 
 - CreateYourOwn.jsx
 
-  - [>] create itemsContext where an item is
+  - [] create itemsContext where an item is, and then it comes from api.js
 
-    and it comes from api.js
+    - [] add save positions => save in localStorage in handleSave in DesignOverlay.jsx {id: img.id (this is the img.name or img.src), position: {x, y, width, height}}
 
-    - [>] save positions => save in localStorage in handleSave in DesignOverlay.jsx {id: img.id (this is the img.name or img.src), position: {x, y, width, height}}
-
-      - [] save new image to be sent to business owner
-
-  - [] add text to designs
-
-  - [] choose a design from a list of designs
+    - [] add save => save new image to be sent to business owner
 
   - [] add any notes you want to add
 
-  - [] select quantity
-
   - [] add item to cart
 
-  - [] style CreateYourOwn.jsx
+  - [] add checkout
 
 - [] auth
+ 
+  - [] add sign in
 
+  - [] add sign out
+    
 - checkout
+
+  used stripe module.
 
   - [] ask email or sign in/up
 
@@ -78,21 +75,23 @@ The designed products are reserved order through checkout process and designed i
 
   - [] review order and confirm
 
-- style home
+- add styling home
 
-- style shop
+- add styling shop
 
-- about us
+- add styling about us
 
 - contact us
 
-  - [] email + message
+  - [] add styling => email + message
 
 - order
 
-  - [] show customer's order
+  - [] add => show customer's order item
 
 - cart
+  
+  - [] add => show customer's cart item and delete all or one
 
 # Notes
 
